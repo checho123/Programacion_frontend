@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" href="css/aprende.css">
+	<link rel="shortcut icon" href="imagenes/Icono/favicon-aprende.png" type="image/x-icon">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<title>Aprende</title>
+</head>
+
+<body>
+
+	<section class="contenedor_grilla">
+
+		<section class="barra">
+
+			<!-- Este es el menu -->
+			<header>
+				<div id="navegacion" class="overlay" class="bar">
+
+					<a class="closebtn" onclick="closeNav()">
+						<img src="imagenes/1Menu-login_elements/2icons_menu-login_aprende/8Icon_menulogin-x_aprende.png"
+							alt="icon" class="icono-exit">
+					</a>
+
+					<div class="overlay-menu">
+						<ul class="logo-menu">
+							<li><a href="index.html"><img class="logo"
+										src="imagenes/1Menu-login_elements/2icons_menu-login_aprende/7Icon_menulogin-coworking2_aprende.png"
+										alt="logo" width="450" height="250" title="Inicio"></a></li>
+						</ul>
+						<ul class="link">
+							<li><a href="aprende.html"><img
+										src="imagenes/1Menu-login_elements/2icons_menu-login_aprende/1Icon_menu-aprende_aprende.png"
+										alt="" width="90" height="90" class="logo-link" title="Aprende"></a></li>
+							<li><a href="aprende.html">Aprende</a></li>
+							<li><a href="revista.html"><img
+										src="imagenes/1Menu-login_elements/2icons_menu-login_aprende/2Icon_menu-revista_aprende.png"
+										alt="" width="90" height="90" class="logo-link" title="Revista"></a></li>
+							<li><a href="revista.html">Revista</a></li>
+							<li><a href="juegos.html"><img
+										src="imagenes/1Menu-login_elements/2icons_menu-login_aprende/3Icon_menu-juegos_aprende.png"
+										alt="" width="90" height="90" class="logo-link" title="Juegos"></a></li>
+							<li><a href="juegos.html">Juegos</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="menu" id="bar">
+					<span onclick="openNav()" class="bar">
+						<img src="imagenes/4Footers_elements/2Icons_footer-aprende/menu_icon-aprende1.png" alt="icon"
+							class="icono-menu">
+					</span>
+					<span onclick="openNavIngreso()">
+						<img src="imagenes/4Footers_elements/2Icons_footer-aprende/menu_icon-aprende2.png" alt="icon"
+							class="icono-login" id="icono-login">
+					</span>
+				</div>
+				<div class="decoracion">
+					<img src="imagenes/1Menu-login_elements/1icons_menu-login_home/9Icon_menulogin-symbol_home.png"
+						alt="" width="40" height="50">
+				</div>
+
+				<!--menu de ingreso-->
+				<div id="navegacionIngreso" class="overlay" class="bar">
+
+					<a class="closebtn" onclick="closeNavIngreso()">
+						<img src="imagenes/1Menu-login_elements/2icons_menu-login_aprende/8Icon_menulogin-x_aprende.png"
+							alt="icon" class="icono-exit">
+					</a>
+
+					<div class="overlay-menu">
+						<ul class="logo-menu">
+							<li><a href="index.html"><img class="logo"
+										src="imagenes/1Menu-login_elements/2icons_menu-login_aprende/7Icon_menulogin-coworking2_aprende.png"
+										alt="logo" width="450" height="250" title="Inicio"></a></li>
+						</ul>
+						<ul class="link">
+							<li><a href="#" id="btn-cerrari"><img
+										src="imagenes/1Menu-login_elements/2icons_menu-login_aprende/8Icon_menulogin-x_aprende.png"
+										alt="" width="90" height="90" class="logo-link" title="Aprende"></a></li>
+							<li><a href="#" onclick="cerrarSesion()" id="btn-cerrar">Cerrar <br> Sesión</a></li>
+							<li><a href="#" id="btn-ingresofi"><img
+										src="imagenes/1Menu-login_elements/2icons_menu-login_aprende/4Icon_login-facebook_aprende.png"
+										alt="" width="90" height="90" class="logo-link" title="facebook"></a></li>
+							<li><a href="#" onclick="inicioSesion()" id="btn-ingresof">Facebook.()</a></li>
+							<li><a href="#" id="btn-ingresogi"><img
+										src="imagenes/1Menu-login_elements/2icons_menu-login_aprende/5Icon_login-google_aprende.png"
+										alt="" width="90" height="90" class="logo-link" title="Google"></a></li>
+							<li><a href="#" onclick="inicioSesion()" id="btn-ingresog">Google.()</a></li>
+							<li><a href="#" id="btn-ingresooi"><img
+										src="imagenes/1Menu-login_elements/2icons_menu-login_aprende/6Icon_login-outlook_aprende.png"
+										alt="" width="90" height="90" class="logo-link" title="Outlook"></a></li>
+							<li><a href="#" onclick="inicioSesion()" id="btn-ingresoo">Outlook.()</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</header>
+
+		</section>
+
+
+
+		<div class="b_Acordeon">
+
+			<img src="imagenes/3Backgrounds_elements/bg_scroll-aprende1.png" alt="decoracion" class="adorno-tres">
+
+			<section class="mision">
+				<div class="contenedor">
+					<div class="tarjeta">
+						<div class="titulo">¿Quiénes somos?</div>
+						<div class="contenido">
+							<p>
+								Coworking2 se crea a raíz de una necesidad fundamental que hoy en día el mercado
+								Colombiano ignora: El uso profesional de páginas webs dinámicas, optimizadas y
+								adaptables que permitan establecer vínculos más cercanos con los clientes y volver la
+								empresa más competitiva en el mercado laboral.
+							</p>
+						</div>
+					</div>
+					<div class="tarjeta">
+						<div class="titulo">Misión</div>
+						<div class="contenido">
+							<p>
+								Brindar soluciones en diseño, desarrollo, mantenimiento y posicionamiento orgánico de
+								páginas web, ofreciendo un portafolio de servicios de alta calidad y que se adapte a los
+								diferentes presupuestos, caracterizándonos por nuestro cumplimiento y por velar por la
+								completa satisfacción de nuestros clientes.
+							</p>
+						</div>
+					</div>
+					<div class="tarjeta">
+						<div class="titulo">Visión</div>
+						<div class="contenido">
+							<p>
+								Para el año 2021 estar posicionados en el mercado colombiano como la primera opción en
+								creación y administración de sitios web, gracias a la calidad, confianza y credibilidad
+								que ofrecemos a nuestros clientes.
+							</p>
+						</div>
+					</div>
+				</div>
+				<hr class="separador" />
+			</section>
+
+
+			<!-- inicio seccion acordeon contenido  -->
+			<section class="acordeon-contenido">
+
+				<h1 class="texto-acordeon">{Tiempo de aprender}</h1>
+				<img src="imagenes/3Backgrounds_elements/bg_scroll-aprende2.png" alt="decoracion" class="adorno-dos">
+
+				<details>
+					<summary class="seccion-html">HTML</summary>
+					<div class="marco-secciones">
+						<div class="definicion html">
+							<p>
+								Por sus siglas en ingles (HiperText Markup Language) en español (Lenguaje de Marcas de
+								Hipertexto) , es el lenguaje sobre el cual está fundamentada la Web, ya que en él se
+								aloja todo el contenido que irá dentro una página y por tanto es el primer lenguaje que
+								se recomienda aprender para entrar al mundo de la programacióny el desarrollo Web.
+							</p>
+							<br>
+							<p>
+								Ahora bien, dicho contenido debe organizarse de tal modo que pueda ser interpretado
+								correctamente por un navegador, para esto se
+								requiere la utilización de unos elementos llamados “etiquetas”. Las cuales cumplen la
+								funcion de marcar las diferentes partes del contenido para que así el navegador pueda
+								identificar de que tipo se trata (título, párrafo,imagen, video, etc.).
+							</p>
+
+						</div>
+						<div class="ejemplo">
+							<video class="p_video" src="videos/HTML.mp4" controls width="100%"></video>
+						</div>
+					</div>
+				</details>
+
+				<details>
+					<summary class="seccion-css">CSS</summary>
+
+					<div class="marco-secciones">
+						<div class="definicion css">
+							<p>
+								Por sus siglas en íngles (Cascading Style Sheets) en español ( Hojas de estilo en
+								Cascada), es un lenguaje que describe cómo se va a mostrar la estructura del documento
+								de HTML en la pantalla del usuario como lo es la información, imágenes, tablas, videos,
+								etc. De acuerdo a como se desee modificar el diseño en la hoja de estilos.
+							</p>
+							<br>
+							<p>
+								Aquí puedes
+								crear animaciones, cambiar tamaños, utilizar el tipo de letra que desees, usar fondos,
+								cambiar colores, usar bordes, alinear texto, márgenes etc. Modificando la apariencia de
+								tu página web de acuerdo a tu necesidad o preferencia de una forma muy sencilla.
+							</p>
+						</div>
+						<div class="ejemplo">
+							<video src="videos/css.mp4" controls width="100%"></video>
+						</div>
+				</details>
+
+				<details>
+					<summary class="seccion-javascript">Javascript</summary>
+					<div class="marco-secciones">
+						<div class="definicion javascript">
+							<p>
+								Es un lenguaje de programación que te permite crear contenido dinámico, controlar
+								archivos multimedia, crear imágenes animadas, cajas de dialogo, validación de
+								formularios y muchas otras cosas.
+							</p>
+							<br>
+							<p>
+								Se utiliza para dar ese dinamismo o interactividad que genera mayor contacto con el
+								usuario y genere un mayor enganche lo que puede llegar a generar que este permanezca más
+								tiempo en nuestro sitio web.
+							</p>
+							<br>
+							<p>
+								Se recomienda que para manejar javascript es fundamental saber de antemano HTML y CSS
+							</p>
+						</div>
+						<div class="ejemplo">
+							<video src="videos/javascript.mp4" controls width="100%"></video>
+						</div>
+				</details>
+
+				<details>
+					<summary class="seccion-frontend">Frontend</summary>
+					<div class="marco-secciones">
+						<div class="definicion frontend">
+							<p>
+								Es la parte del sitio web donde los usuarios pueden interactuar de forma directa.
+							</p>
+							<br>
+							<p>
+								Se puede ver el diseño, los contenidos y es una de las dos partes en las
+								que se divide la estructura de cualquier Página Web.
+							</p>
+							<br>
+							<p>
+								Dentro de esta se encuentra todos los lenguajes de programación para Frontend vistos
+								hasta el momento que son HTML, CSS y Javascript, sin contar que para complementar lo
+								anterior, se puede recurrir a los Frameworks y librerías que permiten agilizar el diseño
+								de la página para mejorar la experiencia del usuario.
+							</p>
+						</div>
+						<div class="ejemplo">
+							<video src="videos/frontend.mp4" controls width="100%"></video>
+						</div>
+				</details>
+
+				<details>
+					<summary class="seccion-frameworks">Frameworks</summary>
+					<div class="marco-secciones">
+						<div class="definicion frameworks">
+							<p>
+								Es una herramienta de trabajo estandarizada que ayudan a reducir los tiempos de
+								maquetación de una página web, es como armar un rompecabeza, solamente se puede dar
+								algunos retoques o personalizarlo de acuerdo a sus gustos en color de fuentes, tipo de
+								textos y algunas animaciones, ya que vienen prediseñados y adaptarlas a tus
+								requerimientos de acuerdo a lo que vayas a diseñar.
+							</p>
+							<br>
+							<p>
+								Dentro de los tipos de frameworks que existen, se puede usar Bootstrap, un programa
+								creado por la empresa Twitter, donde tienen diseños de plantillas como tipografías,
+								formas, barras de navegación entreotros aspectos
+							</p>
+						</div>
+						<div class="ejemplo">
+							<video src="videos/frameworks.mp4" controls width="100%"></video>
+						</div>
+				</details>
+
+				<details>
+					<summary class="seccion-librerias">Librerías</summary>
+					<div class="marco-secciones">
+						<div class="definicion librerias">
+							<p>
+								JQuery es un complemento de JavaScript, pero JavaScript lo usa como una librería de
+								código abierto, es usado principalmente para dar efectos y animaciones a lo que estemos
+								trabajando como botones, imágenes, texto, entre otro contenido.
+							</p>
+							<br>
+							<p>
+								Es rápido, pequeño y una apariencia rica en código, además se actualiza constantemente.
+								Es de código abierto y compatible con diferentes navegadores, es fácil de usar, ahorra
+								tiempo, esfuerzos, integral otros complementos que permite realizar animaciones y
+								efectos personalizados. Además, con la masificación de los smartphones también es usado
+								este código jQuery para dar un mejor aspecto visual de las páginas web en ese tamaño de
+								pantallas.
+							</p>
+						</div>
+						<div class="ejemplo">
+							<video src="videos/librerias.mp4" controls width="100%"></video>
+						</div>
+				</details>
+
+			</section>
+
+
+
+		</div>
+
+		<div class="adorno coworking_part1">
+		</div>
+
+
+		<!-- Footer -->
+		<div class="footer1">
+			<footer class="coworking_part2">
+
+				<div class="container-footer-all">
+
+					<div class="container-body">
+
+						<div class="Bcontact">
+
+							<div class="row2">
+								<section>
+									<label>
+
+							</div>
+
+						</div>
+
+						<div class="column2">
+
+							<div class="row">
+								<a target="_blank" href="https://www.facebook.com/Bictia/"> <img
+										src="imagenes/4Footers_elements/2Icons_footer-aprende/1footer-fb-aprende.png"
+										 title="https://www.facebook.com/Bictia/" alt=""></a>
+
+							</div>
+							<div class="row">
+								<a target="_blank" href="https://twitter.com/bictia"> <img
+										src="imagenes/4Footers_elements/2Icons_footer-aprende/2footer-tw-aprende.png"
+										title="https://twitter.com/bictia" alt=""></a>
+
+							</div>
+
+							<div class="row">
+								<a target="_blank" href="https://www.instagram.com/bictia/"> <img
+										src="imagenes/4Footers_elements/2Icons_footer-aprende/3footer-in-aprende.png"
+										 title="https://www.instagram.com/bictia/" alt=""></a>
+
+							</div>
+
+
+						</div>
+
+						<div class="column1">
+							<img src="imagenes/3Backgrounds_elements/bg_scroll-aprende3.png	" alt="">
+
+							<h1>"Aprender a programar es tan poderoso que la mayoria de nuestro equipo no sabia nada del
+								tema hace dos meses y ahora te presentamos este proyecto con orgullo"</h1>
+							<h1>- Coworking2</h1> <br>
+							
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="container-footer">
+
+					<div class="Bcontact">
+
+						<div class="row2">
+							<section>
+								<label>Phone. 450-462-3632
+
+								</label></section>
+
+							<section>
+								<label>Fax.450-462-3632
+
+								</label></section>
+
+							<section>
+								<label>Toll Free. 1-866-962-3632 Website by Coworking 2
+
+								</label></section>
+						</div>
+
+					</div>
+				</div>
+
+
+			</footer>
+		</div>
+	</section>
+
+
+	<script src="js/menu.js"></script>
+	<script type="text/javascript">
+		AOS.init({
+			offset: 200,
+			duration: 1000,
+		});
+	</script>
+
+	<!--sCRIPTS DE INGRESO-->
+	<script src="js/ingreso.js"></script>
+	<script> verificarSesion() </script>
+</body>
+
+</html>

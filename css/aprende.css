@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Aqui va el menu */
+
+body{
+    background-color: #FBFEF8;
+}
+
+/* Efectos del menu */
+.menu{
+    position: fixed;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#bar{
+    transition: 0.5s;
+}
+
+.icono-menu{
+    display: block;
+}
+
+.menu img{
+    padding: 20px;
+}
+
+.icono-menu:hover{
+    background: #222827;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+    border-radius: 100%;
+}
+.icono-login:hover{
+    border-radius: 100%;
+    background: #222827;
+    background: rgba(0,0 ,0,0.5);
+    transition: all 1s;
+}
+
+
+.logo:hover{
+    transform:scale(1.5);
+    transition: 1.5s;
+}
+
+.icono-exit:hover{
+    transform: scale(1.5);
+    transition: .5s;
+}
+
+.decoracion{
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+
+
+/* todo lo de la Efectos */
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #6C825E;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+
+.logo{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+.overlay-menu{
+    width: 100%
+} 
+
+.link{
+   margin-left: 10%;
+   padding: -5px;
+}
+
+.logo-link:hover{
+    transform: rotate(1800deg) scale(1.2);
+    transition: 5s;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 55px;
+    letter-spacing: 3px;
+    color: #D9E8DD;  
+    transition: 0.3s;
+}
+
+.overlay ul{
+    list-style: none;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #FFFCF9;
+}
+  
+.overlay .closebtn {
+    float: right;
+    margin: 20px;
+    font-size: 60px;
+    cursor: pointer;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
+
+/* Aqui esta todo el contenedor */
+.contenedor_grilla{
+    display: grid;
+    grid-template-areas: /* Área Quienes somos, misión y visión*/
+                         /* Área Sección 2*/
+                         "adorno     b_Acordeon     b_Acordeon     b_Acordeon   Barra_Menu"
+                         "adorno     b_Acordeon     b_Acordeon     b_Acordeon   Barra_Menu"
+            
+                         /* Área Footer*/
+                         "footer1        footer1        footer1        footer1      footer1"
+                         "footer1        footer1        footer1        footer1      footer1"
+                         "footer1        footer1        footer1        footer1      footer1"
+                         "footer1        footer1        footer1        footer1      footer1";
+    grid-template-columns: 100px repeat(3, 1fr) 80px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* en contenedor se encuentran la fotografia y se */
+
+.contenedor {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: #505050;
+    border-style: solid;
+    border-width: 0px;
+    margin:60px;
+    background: url("../imagenes/2Pages_elements/fotos-logos/2aprende/Team.png");
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    padding-top: 1px;    
+}
+
+@media (max-width: 1000px) {
+
+    .tarjeta {
+        width: 100% !important;
+        height: 240px !important;
+        margin-bottom: 2px;
+    }
+
+}
+
+
+.tarjeta{
+
+    background-color:rgba(129, 148, 117, 0.6);
+    width: 33%;
+    height: 400px;
+    margin-right: 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.contenedor .tarjeta:hover .titulo {
+    
+    top: 30px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.separador {
+    width: 90%;
+    height: 20px;
+    background: #222827;
+    position: relative;
+    left: 60px;
+    bottom: 60px;
+}
+.titulo{
+    color: #222827;
+    font-family: 'Montserrart-Bold', sans-serif;
+    font-size: 35px;
+}
+
+.contenido{
+    color: #fbfefb;
+}
+
+.contenedor .tarjeta .titulo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1.5s;
+    width: 170px;
+    height: 100%;
+    text-align: center;
+    
+}
+
+.contenedor .tarjeta .contenido p {
+    opacity: 0;
+    font-size: 15px;
+    padding: 20px 20px;
+    line-height: 1.5em;
+    transition: 0.5s;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.contenedor .tarjeta:hover .contenido p {
+    opacity: 1;
+    
+}
+
+.contenedor_grilla > div{
+    justify-content: center;
+    text-align: center;
+    border: 0px solid transparent;
+}
+
+.b_Acordeon {
+    grid-area: b_Acordeon;
+    padding: 50px;
+}
+
+/* Adorno */
+.adorno{
+    grid-area: adorno;
+}
+.adorno-uno{
+    position: absolute;
+    width: 130px;
+    top: 90%;
+    left: 0;
+}
+
+.adorno-dos{
+    position: relative;
+    width: 150px;
+    height: 250px;
+    transform: translateY(-50%) translateX(90%);
+}
+
+.adorno-tres{
+    position: absolute;
+    width: 80px;
+    height: 160px;
+    left: 50%;
+    opacity: .5;
+}
+
+/* Acordeon desde aqui comienza */
+
+.acordeon-contenido {
+    width: 100%;
+    max-width: 1188px;
+    padding:40px;
+    box-sizing: border-box;
+}
+
+.texto-acordeon{
+    font-size: 50px;
+    position: relative;
+    transform: translateX(-23%);
+}
+
+.seccion-html {
+  background-image: url("../imagenes/2Pages_elements/fotos-logos/2aprende/7-imagen_aprende-html.jpg");
+  font-family: 'Montserrart-Bold';
+}
+
+.seccion-css {
+  background: url("../imagenes/2Pages_elements/fotos-logos/2aprende/8-imagen_aprende-css.jpg");
+  font-family: 'Montserrart-Bold';
+}
+.seccion-javascript {
+  background: url("../imagenes/2Pages_elements/fotos-logos/2aprende/9-imagen_aprende-js.jpg");
+  font-family: 'Montserrart-Bold';
+}
+.seccion-frontend {
+  background: url("../imagenes/2Pages_elements/fotos-logos/2aprende/10-imagen_aprende-ft.jpg");
+  font-family: 'Montserrart-Bold';
+}
+.seccion-frameworks {
+  background: url("../imagenes/2Pages_elements/fotos-logos/2aprende/11-imagen_aprende-fw.jpg");
+  font-family: 'Montserrart-Bold';
+}
+.seccion-librerias {
+  background: url("../imagenes/2Pages_elements/fotos-logos/2aprende/12-imagen_aprende-lb.jpg");
+  font-family: 'Montserrart-Bold';
+}
+
+.acordeon-img{
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: -15px;
+}
+
+.acordeon-contenido summary {
+  height: 79px;
+  background-size: cover;
+  font-size: 30px;
+  color: white;
+  text-align: left;
+}
+.marco-secciones {
+  border: 2px solid #222827;
+  box-sizing: border-box;
+  display: flex;
+}
+.definicion {
+ 
+  align-self: stretch;
+  width: 36%;
+  border: 1px solid  #222827;
+  box-sizing: border-box;
+  margin: 10px;
+  margin-right: 5px;
+  height: 100%;
+  padding: 15px;
+  text-align: justify;
+}
+
+.html{
+    background: url(../imagenes/2Pages_elements/fotos-logos/2aprende/logo_html.png) no-repeat bottom left;
+    background-size: 60%;
+    
+}
+
+.css{
+    background: url(../imagenes/2Pages_elements/fotos-logos/2aprende/logo_css.png) no-repeat bottom left;
+    background-size: 60%;
+    
+}
+
+.javascript{
+    background: url(../imagenes/2Pages_elements/fotos-logos/2aprende/logo_js.png) no-repeat bottom left;
+    background-size: 60%;
+    
+}
+
+.frontend{
+    background: url(../imagenes/2Pages_elements/fotos-logos/2aprende/logo_frontend.png) no-repeat bottom left;
+    background-size: 60%;
+    
+}
+
+.frameworks{
+    background: url(../imagenes/2Pages_elements/fotos-logos/2aprende/logo_frameworks.png) no-repeat bottom left;
+    background-size: 60%;
+    
+}
+
+.librerias{
+    background: url(../imagenes/2Pages_elements/fotos-logos/2aprende/logo_librerias.png) no-repeat bottom left;
+    background-size: 60%;
+    
+}
+
+.coworking_part1{
+    background: url(../imagenes/3Backgrounds_elements/bg_scroll-aprende4-.1.png) no-repeat bottom left;
+    background-size: 100% 880px;
+}
+
+.coworking_part2{
+
+    background: url(../imagenes/3Backgrounds_elements/bg_scroll-aprende4-2.png) no-repeat top left;
+    background-size: 100px auto;
+}
+
+.ejemplo {
+ 
+  align-self: center;
+  text-align: center;
+  width: 60%;
+  /* border: 1px solid #222827; */
+  box-sizing: border-box;
+  margin: 10px;
+  margin-left: 11px;
+  padding: 15px;
+}
+
+/* Área Footer*/
+.footer1{
+    grid-area: footer1;  
+    background: #222927;
+}
+
+footer{
+    width: 100%;
+    background-size: 100% 100%;
+    font-size: 20px; 
+    color: white;
+}
+
+.container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column1 {
+    max-width: 800px;
+}
+
+.column1 h1 {
+    font-size: 22px;
+    text-align: right;
+}
+
+.column1 p {
+    font-size: 14px;
+    color: #D9E8DD;
+    margin-top: 20px;
+}
+
+.column1 img{
+    position: relative;
+    width: 120px;
+    height: 180px;
+}
+.column2 {
+    max-width: 400px;
+}
+
+.column2 h1 {
+    font-size: 22px;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+    
+}
+
+.row img {
+    margin-top: 10%;
+    width: 100px;
+    height: 100px;
+    border: 50%;
+}
+
+.row label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #FBFEF8;
+}
+
+.Bcontact {
+    max-width: 100%;
+}
+
+.Bcontact h1 {
+    font-size: 22px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row2 img {
+    width: 50px;
+    height: 50px;
+    border: 50%;
+}
+
+.row2 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 1200px;
+}
+
+.row3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row3 img {
+    width: 50px;
+    height: 50px;
+}
+
+.row3 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 1200px;
+}
+
+.container-footer {
+    width: 100%;
+    padding: 20px;
+    color: #799189;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+/* Media Query */
+
+@media (max-width: 1000px) {
+  .definicion{
+    display: none;
+  }
+
+  .ejemplo{
+    width: 100%;
+  }
+}
+.acordeon-contenido summary:before {
+  content: "⌄";
+  position: relative;
+  left: 85%;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  
+}
+
+.acordeon-contenido details[open] summary:before {
+  content: "⌃";
+  top: 28px;
+}
+
+details > summary {
+    list-style-type: none;
+    outline: 0;
+    
+}
+
+/* para quitar el flecha del explorador google  */
+
+details summary::-webkit-details-marker {
+    display:none;
+        
+}

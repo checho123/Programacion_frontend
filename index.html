@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="shortcut icon" href="imagenes/Icono/favicon-home.png" type="image/x-icon">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+
+    <!-- Contenedor -->
+    <div class="contenedor">
+
+
+        <section class="barra">
+
+            <!-- Este es el menu -->
+            <header>
+                <div id="navegacion" class="overlay" class="bar">
+
+                    <a class="closebtn" onclick="closeNav()">
+                        <img src="imagenes/1Menu-login_elements/1icons_menu-login_home/8Icon_menulogin-x_home.png"
+                            alt="icon" class="icono-exit">
+                    </a>
+
+                    <div class="overlay-menu">
+                        <ul class="logo-menu">
+                            <li><a href="index.html"><img class="logo"
+                                        src="imagenes/1Menu-login_elements/1icons_menu-login_home/7Icon_menulogin-coworking2-home.png"
+                                        alt="logo" width="450" height="250" title="Inicio"></a></li>
+                        </ul>
+                        <ul class="link">
+                            <li><a href="aprende.html"><img
+                                        src="imagenes/1Menu-login_elements/1icons_menu-login_home/1Icon_menu-aprende-home.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Aprende"></a></li>
+                            <li><a href="aprende.html">Aprende</a></li>
+                            <li><a href="revista.html"><img
+                                        src="imagenes/1Menu-login_elements/1icons_menu-login_home/2Icon_menu-revista-home.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Revista"></a></li>
+                            <li><a href="revista.html">Revista</a></li>
+                            <li><a href="juegos.html"><img
+                                        src="imagenes/1Menu-login_elements/1icons_menu-login_home/3Icon_menu-juegos-home.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Juegos"></a></li>
+                            <li><a href="juegos.html">Juegos</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="menu" id="bar">
+                    <span onclick="openNav()" class="bar">
+                        <img src="imagenes/4Footers_elements/1icons_footer-home/menu_icon-home1.png" alt="icon"
+                            class="icono-menu">
+                    </span>
+                    <span onclick="openNavIngreso()">
+                        <img src="imagenes/4Footers_elements/1icons_footer-home/menu_icon-home2.png" alt="icon"
+                            class="icono-login" id="icono-login">
+                    </span>
+                </div>
+                <div class="decoracion">
+                    <img src="imagenes/1Menu-login_elements/1icons_menu-login_home/9Icon_menulogin-symbol_home.png"
+                        alt="" width="40" height="50">
+                </div>
+
+                <!--menu de ingreso-->
+                <div id="navegacionIngreso" class="overlay" class="bar">
+
+                    <a class="closebtn" onclick="closeNavIngreso()">
+                        <img src="imagenes/1Menu-login_elements/1icons_menu-login_home/8Icon_menulogin-x_home.png"
+                            alt="icon" class="icono-exit">
+                    </a>
+
+                    <div class="overlay-menu">
+                        <ul class="logo-menu">
+                            <li><a href="index.html"><img class="logo"
+                                        src="imagenes/1Menu-login_elements/1icons_menu-login_home/7Icon_menulogin-coworking2-home.png"
+                                        alt="logo" width="450" height="250" title="Inicio"></a></li>
+                        </ul>
+                        <ul class="link">
+                            <li><a href="#" id="btn-cerrari"><img
+                                        src="imagenes/1Menu-login_elements/1icons_menu-login_home/8Icon_menulogin-x_home.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Aprende"></a></li>
+                            <li><a href="#" onclick="cerrarSesion()" id="btn-cerrar">Cerrar <br> Sesión</a></li>
+                            <li><a href="#" id="btn-ingresofi"><img
+                                        src="imagenes/1Menu-login_elements/1icons_menu-login_home/4Icon_login-facebook-home.png"
+                                        alt="" width="90" height="90" class="logo-link" title="facebook"></a></li>
+                            <li><a href="#" onclick="inicioSesion()" id="btn-ingresof">Facebook.()</a></li>
+                            <li><a href="#" id="btn-ingresogi"><img
+                                        src="imagenes/1Menu-login_elements/1icons_menu-login_home/5Icon_login-google-home.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Google"></a></li>
+                            <li><a href="#" onclick="inicioSesion()" id="btn-ingresog">Google.()</a></li>
+                            <li><a href="#" id="btn-ingresooi"><img
+                                        src="imagenes/1Menu-login_elements/1icons_menu-login_home/6Icon_login-outlook-home.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Outlook"></a></li>
+                            <li><a href="#" onclick="inicioSesion()" id="btn-ingresoo">Outlook.()</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </header>
+
+        </section>
+
+        <!-- Sección 1 -->
+
+        <section class="SUno">
+
+            <!-- Imagen Temporal -->
+            <img class="SUnoIUno" src="imagenes/2Pages_elements/fotos-logos/1home/1-imagen_home.jpg" alt=""
+                width="450vh" height="650vh" data-aos="fade-up">
+            <img src="imagenes/3Backgrounds_elements/bg_scroll-home1.png" class="home-uno">
+
+            <!-- Texto 1 -->
+            <p class="SUnoTUno" data-aos="fade-right">¿Por qué aprender a Programar ?</p>
+            <p class="SUnoTUno" data-aos="fade-right"><span class="blanco-uno">¿Por qué aprender a Programar ?</span>
+            </p>
+
+            <p class="SUnoTDos" data-aos="fade-left">Formate en programación</p>
+            <p class="SUnoTDos" data-aos="fade-left"><span class="blanco-dos">Formate en programación</span></p>
+
+            <!-- Texto 2 -->
+            <p class="SUnoTTres" data-aos="fade-down-left"> Puedes crear cosas de la nada. </p>
+
+
+        </section>
+
+        <!-- Sección 2 -->
+
+        <section class="SDos">
+
+            <!-- Texto 1 -->
+
+            <p class="SDosTUno" data-aos="fade-right">Es para <span class="negrita"> todos</span></p>
+            <p class="SDosTDos" data-aos="fade-right">y para todo</p>
+            <p class="SDosTDos" data-aos="fade-right"><span class="blanco-tres">y para todo</span></p>
+
+            <!-- Imagen Temporal -->
+            <img class="SDosIUno" src="imagenes/2Pages_elements/fotos-logos/1home/2-imagen_home.jpg" alt=""
+                width="650vh" height="650vh" data-aos="fade-up" data-aos-duration="3000">
+
+            <!-- Texto 2 -->
+            <p class="SDosTTres" data-aos="fade-down-right">El código brinda las soluciones a la mayoría de la
+                actividades humanas</p>
+            <p class="SDosTTres" data-aos="fade-down-right"><span class="blanco-cuatro">El código brinda las soluciones
+                    a la mayoría de la actividades humanas</span></p>
+            <img src="imagenes/3Backgrounds_elements/bg_scroll-home2.png" class="home-dos">
+
+        </section>
+
+        <!-- Sección 3 -->
+
+        <section class="STres">
+
+            <!-- imagen temporal -->
+            <img class="STresIUno" src="imagenes/2Pages_elements/fotos-logos/1home/3-imagen_home.jpg" alt=""
+                width="300vh" height="410vh" data-aos="zoom-out-up">
+
+            <p class="StresTUno" data-aos="zoom-out-right">La industria de la programación y la tecnología promueve la
+                cuarta revolución industrial.</p>
+            <p class="StresTUno" data-aos="zoom-out-right"><span class="blanco-cinco">La industria de la programación y
+                    la tecnología promueve la cuarta revolución industrial.</span></p>
+            <!-- imagen temporal -->
+            <img class="STresIDos" src="imagenes/2Pages_elements/fotos-logos/1home/4-imagen_home.jpg" alt=""
+                width="800vh" height="270vh" data-aos="zoom-in-up">
+
+        </section>
+
+        <!-- Sección 4 -->
+
+        <section class="SCuatro">
+
+            <img class="SCuatroIUno" src="imagenes/2Pages_elements/fotos-logos/1home/5-imagen_home.jpg" alt=""
+                width="600vh" height="320vh" data-aos="fade-up" data-aos-duration="3000">
+
+            <img src="imagenes/3Backgrounds_elements/bg_scroll-home3.png" class="home-tres">
+
+            <p class="SCuatroTUno" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"> <span
+                    class="blanco-seis">La tecnologia e</span>n Colombia</p>
+
+            <p class="SCuatroTDos" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"> genera mas de
+                un millon</p>
+
+            <p class="SCuatroTTres" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"> de empleos
+                nuevos cada año."</p>
+
+            <img src="imagenes/3Backgrounds_elements/bg_scroll-home4.png" class="home-cuatro">
+
+
+        </section>
+
+        <!-- Footer -->
+
+        <section class="footer1">
+            <footer>
+
+                <div class="container-footer-all">
+
+                    <div class="container-body">
+
+                        <div class="Bcontact">
+
+                            <div class="row2">
+                            </div>
+
+                        </div>
+
+                        <div class="column2">
+
+                            <div class="row">
+                                <a target="_blank" href="https://www.facebook.com/Bictia/"> <img
+                                        src="imagenes/4Footers_elements/1icons_footer-home/1footer-fb-home.png"
+                                         title="https://www.facebook.com/Bictia/" alt=""></a>
+
+                            </div>
+                            <div class="row">
+                                <a target="_blank" href="https://twitter.com/bictia"> <img
+                                        src="imagenes/4Footers_elements/1icons_footer-home/2footer-tw-home.png"
+                                         title="https://twitter.com/bictia" alt=""></a>
+
+                            </div>
+
+                            <div class="row">
+                                <a target="_blank" href="https://www.instagram.com/bictia/"> <img
+                                        src="imagenes/4Footers_elements/1icons_footer-home/3footer-in-home.png"
+                                         title="https://www.instagram.com/bictia/" alt=""></a>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="column1">
+                            <img src="imagenes/3Backgrounds_elements/bg_scroll-home1.png">
+
+                            <h1>"Aprender a programar es tan poderoso que la mayoria de nuestro equipo no sabia nada del
+                                tema hace dos meses y ahora te presentamos este proyecto con orgullo"</h1>
+                            <h1>- Coworking2</h1> <br>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container-footer">
+
+                    <div class="Bcontact">
+
+                        <div class="row2">
+                            <section>
+                                <label>Phone. 450-462-3632
+
+                                </label></section>
+
+                            <section>
+                                <label>Fax.450-462-3632
+
+                                </label></section>
+
+                            <section>
+                                <label>Toll Free. 1-866-962-3632 Website by Coworking 2
+
+                                </label></section>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </footer>
+        </section>
+    </div>
+
+    <!-- Aqui termina el codigo en html -->
+
+    <script src="js/menu.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+        });
+    </script>
+
+    <!--SCRIPTS DE INGRESO-->
+    <script src="js/ingreso.js"></script>
+    <script> verificarSesion() </script>
+
+</body>
+
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/revista.css">
+    <link rel="shortcut icon" href="imagenes/Icono/favicon-revista.png" type="image/x-icon">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Revista</title>
+</head>
+
+<body>
+    <section class="contenedor_grilla">
+        <div class="Barra_Menu">
+            <!-- Este es el menu -->
+            <header>
+                <div id="navegacion" class="overlay" class="bar">
+
+                    <a class="closebtn" onclick="closeNav()">
+                        <img src="imagenes/1Menu-login_elements/3icons_menu-login_revista/8Icon_menulogin-x_revista.png"
+                            alt="icon" class="icono-exit">
+                    </a>
+
+                    <div class="overlay-menu">
+                        <ul class="logo-menu">
+                            <li><a href="index.html"><img class="logo"
+                                        src="imagenes/1Menu-login_elements/3icons_menu-login_revista/7Icon_menulogin-coworking2_revista.png"
+                                        alt="logo" width="450" height="250" title="Inicio"></a></li>
+                        </ul>
+                        <ul class="link">
+                            <li><a href="aprende.html"><img
+                                        src="imagenes/1Menu-login_elements/3icons_menu-login_revista/1Icon_menu-aprende_revista.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Aprende"></a></li>
+                            <li><a href="aprende.html">Aprende</a></li>
+                            <li><a href="revista.html"><img
+                                        src="imagenes/1Menu-login_elements/3icons_menu-login_revista/2Icon_menu-revista_revista.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Revista"></a></li>
+                            <li><a href="revista.html">Revista</a></li>
+                            <li><a href="juegos.html"><img
+                                        src="imagenes/1Menu-login_elements/3icons_menu-login_revista/3Icon_menu-juegos_revista.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Juegos"></a></li>
+                            <li><a href="juegos.html">Juegos</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="menu" id="bar">
+                    <span onclick="openNav()" class="bar">
+                        <img src="imagenes/4Footers_elements/3Icons_footer-revista/menu_icon-revista1.png" alt="icon" class="icono-menu">
+                    </span>
+                    <span onclick="openNavIngreso()">
+                        <img src="imagenes/4Footers_elements/3Icons_footer-revista/menu_icon-revista2.png" alt="icon" class="icono-login"
+                            id="icono-login">
+                    </span>
+                </div>
+                <div class="decoracion">
+                    <img src="imagenes/4Footers_elements/3Icons_footer-revista/menu_icon-revista3.png"
+                        alt="" width="40" height="50">
+                </div>
+
+                <!--menu de ingreso-->
+                <div id="navegacionIngreso" class="overlay" class="bar">
+
+                    <a class="closebtn" onclick="closeNavIngreso()">
+                        <img src="imagenes/1Menu-login_elements/2icons_menu-login_aprende/8Icon_menulogin-x_aprende.png"
+                            alt="icon" class="icono-exit">
+                    </a>
+
+                    <div class="overlay-menu">
+                        <ul class="logo-menu">
+                            <li><a href="index.html"><img class="logo"
+                                        src="imagenes/1Menu-login_elements/3icons_menu-login_revista/7Icon_menulogin-coworking2_revista.png"
+                                        alt="logo" width="450" height="250" title="Inicio"></a></li>
+                        </ul>
+                        <ul class="link">
+                            <li><a href="#" id="btn-cerrari"><img
+                                        src="imagenes/1Menu-login_elements/3icons_menu-login_revista/8Icon_menulogin-x_revista.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Aprende"></a></li>
+                            <li><a href="#" onclick="cerrarSesion()" id="btn-cerrar">Cerrar <br> Sesión</a></li>
+                            <li><a href="#" id="btn-ingresofi"><img
+                                        src="imagenes/1Menu-login_elements/3icons_menu-login_revista/4Icon_login-facebook_revista.png"
+                                        alt="" width="90" height="90" class="logo-link" title="facebook"></a></li>
+                            <li><a href="#" onclick="inicioSesion()" id="btn-ingresof">Facebook.()</a></li>
+                            <li><a href="#" id="btn-ingresogi"><img
+                                        src="imagenes/1Menu-login_elements/3icons_menu-login_revista/5Icon_login-google_revista.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Google"></a></li>
+                            <li><a href="#" onclick="inicioSesion()" id="btn-ingresog">Google.()</a></li>
+                            <li><a href="#" id="btn-ingresooi"><img
+                                        src="imagenes/1Menu-login_elements/3icons_menu-login_revista/6Icon_login-outlook_revista.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Outlook"></a></li>
+                            <li><a href="#" onclick="inicioSesion()" id="btn-ingresoo">Outlook.()</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </header>
+
+        </div>
+
+
+        <!-- Html codigo revista -->
+
+
+        <div class="AdorCo1"><img src="imagenes/3Backgrounds_elements/bg_scroll-revista1.png"></div>
+        <div class="NOT">
+            <h1 class="Tit1">{Actualidad}</h1>
+            <div class="row">
+                <div class="Cont"><img src="imagenes/2Pages_elements/fotos-logos/3revista/1_internet-colombia.jpg"
+                        id="Abrir1" alt="img1">
+                    <div class="Texto">
+                        <h1 class="TituloI">Los colombianos ven a Internet como un derecho fundamental</h1>
+                        <br><br><br><br>
+                        <p class="Hi">Los colombianos ven a Internet
+                            como un derecho fundamental. Esa
+                            es la opinión del 96% de ellos, según
+                            el estudio ‘Percepciones y opiniones
+                            acerca de Internet en Colombia’,
+                            contratado por la empresa .CO Internet y adelantado por el Centro
+                            Nacional de... Ver Más. <br><br><br>
+                            Por: Nicolás Verano.
+                        </p>
+                    </div>
+                </div>
+                <div class="Cont UP1">
+                    <img src="imagenes/2Pages_elements/fotos-logos/3revista/2_hacker-girl.jpg" alt="img2">
+                    <div class="Texto">
+                        <h1 class="TituloI">360% más mujeres se inscribieron en 'Cyberwomen Challenge'</h1>
+                        <br><br><br><br>
+                        <p class="Hi">El próximo 25 de mayo se realizará
+                            una nueva edición de ‘Cyberwomen
+                            Challenge’. Este es un concurso
+                            sobre seguridad cibernética que
+                            busca identificar el talento digital de
+                            las mujeres en Colombia. Para sorpresa de los organizadores este año
+                            se inscrib... Ver Más<br><br><br>
+                            Por: Camila Mikán.
+                        </p>
+                    </div>
+                </div>
+                <div class="Cont UP2">
+                    <img src="imagenes/2Pages_elements/fotos-logos/3revista/5_civilización-software.jpg" alt="img3">
+                    <div class="Texto">
+                        <h1 class="TituloI">
+                            “Nuestra civilización depende igual del software que del agua”</h1>
+                        <br><br><br><br><br>
+                        <p class="Hi">Stroustrup creó el C++ en los años
+                            80. Hoy es el quinto lenguaje más
+                            popular tras JavaScript, Java, C y
+                            Python, según una encuesta de
+                            HackerRank a 71.000 desarrolladores de 100 países. 6). No solo Stroustrup es anónimo para el
+                            público,
+                            también... Ver Más.<br><br><br>
+                            Por: Karen Bustamante.
+                        </p>
+                    </div>
+                </div>
+                <div class="Cont DW2">
+                    <img src="imagenes/2Pages_elements/fotos-logos/3revista/3_software-free.jpg" alt="img4">
+                    <div class="Texto">
+                        <h1 class="TituloI">
+                            Software Libre <br> no es software <br> gratuito</h1>
+                        <br><br><br><br>
+                        <p class="Hi">La verdadera ventaja del software
+                            libre es el hecho de poder estudiarlo,
+                            modificarlo y distribuirlo; no que sea
+                            gratis, pues el hecho de que alguien
+                            invierta un gran tiempo desarrollando un software implica que hay un
+                            costo. El software libre no te obliga a
+                            pagar por usar... Ver Más.<br><br><br>
+                            Por: Nicolás Verano.
+                        </p>
+                    </div>
+                </div>
+                <div class="Cont DW1"><img src="imagenes/2Pages_elements/fotos-logos/3revista/4_samsung-robot.jpg"
+                        alt="img5">
+                    <div class="Texto">
+                        <h1 class="TituloI">
+                            Samsung premia los mejores proyectos <br> escolares</h1>
+                        <br><br><br><br>
+                        <p class="Hi">Samsung y el Ministerio de Educación y Formación Profesional han
+                            premiado a los mejores proyectos
+                            escolares de innovación. En el
+                            marco del V Encuentro de Profesores Samsung Smart School, que ha
+                            tenido lugar en la Fundación Carlos
+                            Amberes... Ver Más.<br><br><br>
+                            Por: Juan Alirio Gómez.
+                        </p>
+                    </div>
+                </div>
+                <div class="Cont"><img src="imagenes/2Pages_elements/fotos-logos/3revista/6_Ines-huertas.jpg"
+                        alt="img6">
+                    <div class="Texto">
+                        <h1 class="TituloI">Mujeres programadoras contra los <br> estereotipos</h1>
+                        <br><br><br><br>
+                        <p class="Hi">“Nunca doy una charla con vestido
+                            en un congreso”. Esto le dijo una vez
+                            una chica a Inés Huertas, fundadora
+                            de R-Ladies y CEO de Datatons, y
+                            ella pensó “pues a partir de ahora,
+                            siempre con vestido”. Esa incomodidad -y el esfuerzo para vencerla- que
+                            sienten... Ver Más.<br><br><br>
+                            Por: Laura Morena.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img class="Back" src="imagenes/3Backgrounds_elements/bg_scroll-revista2.png">
+        </div>
+        <div class="AdorCo2"><img class="Cowork" src="imagenes/3Backgrounds_elements/bg_scroll-revista4.png"></div>
+        <div class="ART">
+            <h2 class="Tit3">/* Descubre más noticias <br> cada semana */ </h2>
+
+            <h1 class="Tit2">{Eventos}</h1>
+
+            <div class="row">
+                <div class="Cont UP2"><img src="imagenes/2Pages_elements/fotos-logos/3revista/9_cloudgirls-colombia.jpg"
+                         alt="img1">
+                    <div class="Texto2">
+                        <h1 class="TituloII">Cloud Girls
+                            Colombia</h1>
+                        <br><br><br>
+                        <p class="Hi2">20 de junio
+                        </p>
+                    </div>
+                </div>
+                <div class="Cont UP1">
+                    <img src="imagenes/2Pages_elements/fotos-logos/3revista/8_laboratorio-transjaquer.jpg" alt="img2">
+                    <div class="Texto2">
+                        <h1 class="TituloII">Laboratorio
+                            Transjaquer</h1>
+                        <br><br><br>
+                        <p class="Hi2">30 de mayo
+                            al<br> 6 de junio
+                        </p>
+                    </div>
+                </div>
+                <div class="Cont">
+                    <img src="imagenes/2Pages_elements/fotos-logos/3revista/7_microsoft-influencers.jpg" alt="img3">
+                    <div class="Texto2">
+                        <h1 class="TituloII">
+                            Microsoft
+                            Influencers</h1>
+                        <br><br><br>
+                        <p class="Hi2">19 de junio
+                        </p>
+                    </div>
+                </div>
+                <div class="Cont">
+                    <img src="imagenes/2Pages_elements/fotos-logos/3revista/10_holberton-school.jpg" alt="img4">
+                    <div class="Texto2">
+                        <h1 class="TituloII">
+                            Open Doors
+                            Holberton School</h1>
+                        <br><br><br>
+                        <p class="Hi2">10 de julio
+                        </p>
+                    </div>
+                </div>
+                <div class="Cont DW1"><img src="imagenes/2Pages_elements/fotos-logos/3revista/11_unity-developer.jpg"
+                        alt="img5">
+                    <div class="Texto2">
+                        <h1 class="TituloII">
+                            Unity Developer
+                            Day Bogotá</h1>
+                        <br><br><br>
+                        <p class="Hi2">13 de julio
+                        </p>
+                    </div>
+                </div>
+                <div class="Cont DW2"><img src="imagenes/2Pages_elements/fotos-logos/3revista/12_campus-party.jpg"
+                        alt="img6">
+                    <div class="Texto2">
+                        <h1 class="TituloII">Campus Party
+                            Colombia</h1>
+                        <br><br><br>
+                        <p class="Hi2">18 de junio <br>
+                            al 22 de junio
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img class="Back2" src="imagenes/3Backgrounds_elements/bg_scroll-revista2.png">
+        </div>
+
+        <div class="foot">
+
+            <footer>
+
+                <div class="container-footer-all">
+
+                    <div class="container-body">
+
+                        <div class="Bcontact">
+
+                            <div class="row2">
+                                <section>
+                                    <label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="column2">
+
+                            <div class="row">
+                                <a target="" href="https://www.facebook.com/Bictia/"> <img
+                                        src="imagenes/4Footers_elements/3Icons_footer-revista/1footer-fb-revista.png"
+                                         title="https://www.facebook.com/Bictia/" alt=""
+                                        class="img-row"></a>
+
+                            </div>
+                            <div class="row">
+                                <a target="_blank" href="https://twitter.com/bictia"> <img
+                                        src="imagenes/4Footers_elements/3Icons_footer-revista/2footer-tw-revista.png"
+                                         title="https://twitter.com/bictia" alt="" class="img-row"></a>
+
+                            </div>
+
+                            <div class="row">
+                                <a target="_blank" href="https://www.instagram.com/bictia/"> <img
+                                        src="imagenes/4Footers_elements/3Icons_footer-revista/3footer-in-revista.png"
+                                         title="https://www.instagram.com/bictia/" alt=""
+                                        class="img-row"></a>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="column1">
+                            <img src="imagenes/3Backgrounds_elements/bg_scroll-revista3.png" alt="">
+
+                            <h1>"Aprender a programar es tan poderoso que la mayoria de nuestro equipo no sabia nada del
+                                tema hace dos meses y ahora te presentamos este proyecto con orgullo"</h1>
+                            <h1>- Coworking2</h1> <br>
+                            
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container-footer">
+
+                    <div class="Bcontact">
+
+                        <div class="row2">
+                            <section>
+                                <label>Phone. 450-462-3632
+
+                                </label></section>
+
+                            <section>
+                                <label>Fax.450-462-3632
+
+                                </label></section>
+
+                            <section>
+                                <label>Toll Free. 1-866-962-3632 Website by Coworking 2
+
+                                </label></section>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </footer>
+
+
+        </div>
+    </section>
+    <section>
+        <div class="overlay-revista" id="Over1">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><img class="X"
+                    src="imagenes/2Pages_elements/icons/page_icon-revista1.png"></a>
+            <div class="popup" id="Popup1">
+                <figure class="imagen_noti"><img class="imagenes"
+                        src="imagenes/2Pages_elements/fotos-logos/3revista/1_internet-colombia.jpg"
+                        alt="1_internet-colombia">
+                    <figcaption>//Por: Nicolás Verano</figcaption>
+                </figure>
+                <div class="contenido">
+                    <h2 class="TNot">Los colombianos consideran
+                        <br> el Internet como un derecho fundamental</h2>
+                    <br>
+                    <p class="TText">... Esa es la opinión del 96% de ellos, según el estudio ‘Percepciones y opiniones
+                        acerca de Internet en Colombia’contratado por la empresa .CO Internet y adelantado por el Centro
+                        Nacional de Consultoría. Se basaron en una encuesta en línea (no a través de encuestadores)
+                        realizada a 1.040 personas entre 18 y 60 años.
+                    </p>
+                    <br>
+                    <h3 class="TNot">Los usos de Internet en Colombia</h3>
+                    <br>
+                    <p class="TText">La principal actividad es revisar correos. En segundo lugar aparece explorar
+                        contenidos (en la WWW), incluso por encima de las redes sociales, a pesar del amplio poder que
+                        se les concede a estas últimas como epicentro de la interacción entre los cibernautas.
+                        Finalmente, el último lugar de actividades en la red que realiza los colombianos es buscar
+                        pareja.
+                    </p><br>
+                    <h3 class="TNot">El celular sigue marcando la pauta</h3><br>
+                    <p class="TText">El 97% de los consultados tiene un celular inteligente; cuyo rango de edad está
+                        entre los 18 y los 31 años. Por otra parte, el 88% acceden a la red desde un computador
+                        portátil; el 74%, a través de computadores de escritorio, y el 56%, a través de smart TV.
+                    </p><br>
+                    <h3 class="TNot">Cómo acceden a Internet</h3><br>
+                    <p class="TText">El 51% lo hacen desde su smartphone y el 39% se conecta a la red Wi-Fi en el hogar.
+                        Asímismo, el 78% de quienes acceden a Internet desde el computador portátil, lo hace
+                        principalmente a través del Wi-Fi en su casa.</p>
+
+                </div>
+            </div>
+            <div class="Redes-Soc">
+                <table class="Redes">
+                    <tr>
+                        <th colspan="2" class="Com">"Compartir"</th>
+                    </tr>
+                    <tr>
+                        <td><img class="Compar" src="imagenes/2Pages_elements/icons/page_icon-revista2.png"></td>
+                        <td><img class="Compar" src="imagenes/2Pages_elements/icons/page_icon-revista3.png"></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Aqui termina el codigo en html -->
+
+    
+    <script src="js/menu.js"></script>
+
+    <script type="text/javascript">
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+        });
+    </script>
+
+    <!--SCRIPTS DE INGRESO-->
+    <script src="js/ingreso.js"></script>
+    <script> verificarSesion() </script>
+
+</body>
+
+</html>
+
+
+<!-- https://www.youtube.com/watch?v=VAkKb8lTd-Q -->
+<!-- <script src="js/PopUp.js"></script> -->
+<!--  -->

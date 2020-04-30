@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+
+
+/* Todo el menu */
+
+body{
+    background-color: #FFFCF9;
+}
+
+
+
+
+/* Efectos del menu */
+.menu{
+    position: fixed;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#bar{
+    transition: 0.5s;
+}
+
+.icono-menu{
+    display: block;
+}
+
+.menu img{
+    padding: 20px;
+}
+
+.icono-menu:hover{
+    background: #222827;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.icono-login{
+    border-radius: 50%;
+    transition: 1s;
+}
+.icono-login:hover{
+    background: #222827;
+    background: rgba(0,0 ,0,0.5);
+    border-radius: 100%;
+    transition: all 1s;
+    
+}
+
+
+.logo:hover{
+    transform:scale(1.5);
+    transition: 1.5s;
+    
+}
+
+.icono-exit:hover{
+    transform: scale(1.5);
+    transition: .5s;
+}
+
+.decoracion{
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    margin-left: 30px;
+}
+
+
+/* todo lo de la Efectos */
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#AF5E5D;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+
+.logo{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+.overlay-menu{
+    width: 100%
+} 
+
+.link{
+   margin-left: 10%;
+   padding: -5px;
+}
+
+.logo-link:hover{
+    transform: rotate(1800deg) scale(1.2);
+    transition: 5s;
+    cursor: pointer;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 55px;
+    letter-spacing: 3px;
+    color:#e5cece;  
+    transition: 0.3s;
+}
+
+.overlay ul{
+    list-style: none;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #FFFCF9;
+}
+  
+.overlay .closebtn {
+    float: right;
+    margin: 20px;
+    font-size: 60px;
+    cursor: pointer;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
+
+/* Contenedor Grid */
+.contenedor{
+    display: grid;
+
+    grid-template-areas: /* Área Sección 1*/
+                         "SUno    SUno    SUno    SUno barra"
+                         "SUno    SUno    SUno    SUno barra"
+                         "SUno    SUno    SUno    SUno barra"
+                         "SUno    SUno    SUno    SUno barra"
+                         /* Área Sección 2*/
+                         "SDos    SDos    SDos    SDos barra"
+                         "SDos    SDos    SDos    SDos barra"
+                         "SDos    SDos    SDos    SDos barra"
+                         "SDos    SDos    SDos    SDos barra"
+                         /* Área Sección 3*/
+                         "STres   STres   STres   STres barra"
+                         "STres   STres   STres   STres barra"
+                         "STres   STres   STres   STres barra"
+                         "STres   STres   STres   STres barra"
+                         /* Área Sección 4*/
+                         "SCuatro SCuatro SCuatro SCuatro barra"
+                         "SCuatro SCuatro SCuatro SCuatro barra"
+                         "SCuatro SCuatro SCuatro SCuatro barra"
+                         "SCuatro SCuatro SCuatro SCuatro barra"
+                         /* Área Footer*/
+                         "footer1  footer1  footer1  footer1 footer1"
+                         "footer1  footer1  footer1  footer1 footer1"
+                         "footer1  footer1  footer1  footer1 footer1"
+                         "footer1  footer1  footer1  footer1 footer1";
+    grid-template-columns: repeat(4, 1fr) 100px;
+    grid-template-rows: repeat(4, 1fr) repeat(4, 1fr) repeat(4, 1fr)  repeat(4, 1fr); 
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+
+.blanco-uno{
+    color: white;
+    clip-path: polygon(0 0, 49% 0, 49% 100%, 0% 100%);
+    position: absolute;
+    font-family: 'Montserrart-Bold', sans-serif;
+}
+
+.blanco-dos{
+    color: white;
+    position: absolute;
+    clip-path: polygon(0 0, 15% 0, 10% 100%, 0% 100%);
+    font-family: 'Montserrat-Regular';
+}
+
+.blanco-tres{
+    color: white;
+    position: absolute;
+    clip-path: polygon(72% 0, 100% 0, 100% 100%, 73% 100%);
+    font-family: 'Montserrat-Regular';
+
+}
+
+
+
+.contenedor > div{
+    justify-content: center;
+    text-align: center;
+
+}
+
+/* Area Barra */
+
+.barra{
+    grid-area: barra;
+}
+
+/* Área Sección 1*/ 
+
+.SUno{
+    grid-area: SUno;
+}
+
+.SUno{
+    border: 2px solid transparent;
+    padding: 2vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+  
+.SUnoIUno{
+    grid-area:1/1/3/2;
+    z-index: -1;
+}
+
+.SUnoTUno{
+    text-align: left;
+    margin-top: 40px;
+    font-family: 'Montserrart-Bold', sans-serif;
+    grid-area:1/1/2/3;
+    font-size: 300%;
+    margin-left: 15%;
+    margin-right: 40%;
+    color: #3a2433;
+    
+}
+
+.blanco-cuatro{
+    color: white;
+    clip-path: polygon(33% 0, 300% 0, 300% 300%, 33% 300%);
+
+}
+
+
+
+
+.SUnoTDos{
+    font-family: 'Montserrat-Regular';
+    font-size: 300%;
+    grid-area:2/1/2/3;
+    margin-left: 30%;
+    color: rgb(61, 61, 61);
+}
+
+.SUnoTTres{
+    font-family: 'Montserrat-Regular';
+    font-size: 300%;
+    grid-area: 3/2/3/3;
+    color: rgb(61, 61, 61);
+    padding: 5px
+}
+/* home efecto scroll */
+
+/* Home Seccion uno */
+.home-uno{
+    position: absolute;
+    right: 10%;
+    z-index: -1;
+}
+
+/* Área Sección 2*/ 
+
+.SDos{
+    grid-area: SDos;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.SDos{
+    border: 2px solid transparent;
+    padding: 5vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-areas: "SDosTUno" */
+}
+
+.SDosTUno{
+    font-family: 'Montserrat-Regular';
+    margin-top: 75px;
+    font-size: 3.5rem;     
+    grid-area: 1/1/1/2;
+    margin-left: 5%;
+    color: #3a2433;
+}
+.SDosIUno{
+    grid-area:1/2/2/3;
+    margin-left: -15%;
+    z-index: -1;
+}
+
+  
+.SDosTDos{
+    font-family: 'Montserrat-Regular';
+    font-size: 3.5rem;    
+    margin-top: -80vh;
+    margin-left: 46%;
+    color: #3a2433;
+}
+
+.SDosTTres{
+    font-family: 'Montserrat-Regular';
+    font-size: 3.5rem;
+    text-align: right;
+    grid-area: 2/2/3/3;
+    margin-top: -60%;
+    margin-left: -70%;
+    margin-right: 5%;
+    color: #3a2433;
+
+}
+/* Home Dos */
+.home-dos{
+    position: absolute;
+    z-index: -1;
+    margin-top: 20%;
+}
+/* Área Sección 3*/ 
+
+
+.STres{
+    grid-area: STres;
+}
+
+
+/* Contenedor */
+.STres{
+    border: 2px solid transparent;
+    height: 100vh;
+    padding: 3vh;
+    /* Grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas: "STresIUno";
+    margin: 2%;
+    
+}
+
+.STresIUno{
+    margin-left: 15%;
+    grid-area: 1/1/3/2;
+    filter: brightness(80%);
+}
+
+.StresTUno{
+    font-family: 'Montserrat-Regular';
+    font-size: 2.5rem;
+    margin-top: 20%;
+    margin-left: -60vh;
+    width: 125vh;
+    text-align: right;
+    grid-area: 1/2/2/3;
+    color: #3a2433;
+}
+
+.blanco-cinco{
+    color: rgb(255, 255, 255);
+    clip-path: polygon(0 0, 18% 0, 16% 190%, 0 100%);
+}
+    
+
+.STresIDos{
+    margin-top:20vh;
+    margin-left: -45vh;
+    z-index: -1;
+    grid-area: 2/2/3/3; 
+}
+
+
+/* Área Sección 4*/ 
+
+
+.SCuatro{
+    grid-area: SCuatro;
+}
+
+.SCuatro{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 60px;
+}
+
+.SCuatroTUno{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    grid-column: 1/4;
+    padding-left: 35%;
+    margin-top: -6%;
+    color: #3a2433;
+}
+
+.SCuatroTDos{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    grid-column: 1/4;
+    padding-left: 35%;
+    margin-top: -37%;
+    color: #3a2433;
+   
+}
+
+.SCuatroTTres{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    grid-column: 1/4;
+    padding-left: 35%;
+    margin-top: -30%;
+    color: #3a2433;
+   
+}
+.SCuatroIUno{
+  
+    padding-top: 10%;
+    grid-template-columns: 1/5;
+    padding-left: 30%;
+    z-index: -1;
+}
+
+.blanco-seis{
+    color: white;
+}
+
+/* Home Tres */
+
+.home-tres{
+    position: absolute;
+    right: 0;
+    padding: 50px;
+    z-index: -2;
+}
+
+/* home cuatro */
+
+.home-cuatro{
+    position: absolute;
+    height: 160%;
+}
+
+/* Área Footer*/
+
+.footer1{
+    grid-area: footer1;
+}
+
+footer{
+    width: 100%;
+    background: #3a2433;
+    background-size: 100% 100%;
+    font-size: 20px; 
+    color: white;
+}
+
+.container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column1 {
+    max-width: 900px;
+}
+
+.column1 h1 {
+    font-size: 22px;
+    text-align: right;
+}
+
+.column1 p {
+    font-size: 14px;
+    color: #D9E8DD;
+    margin-top: 20px;
+}
+
+.column1 img{
+    position: relative;
+    left: 400px;
+}
+
+.column2 {
+    max-width: 400px;
+}
+
+.column2 h1 {
+    font-size: 22px;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+    
+}
+
+.row img {
+    margin-top: 10%;
+    width: 100px;
+    height: 100px;
+    border: 50%;
+}
+
+.row label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #FBFEF8;
+}
+
+.Bcontact {
+    max-width: 100%;
+}
+
+.Bcontact h1 {
+    font-size: 22px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row2 img {
+    width: 50px;
+    height: 50px;
+    border: 50%;
+}
+
+.row2 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 1200px;
+}
+
+.row3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row3 img {
+    width: 50px;
+    height: 50px;
+}
+
+.row3 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 1200px;
+}
+
+.container-footer {
+    width: 100%;
+    padding: 20px;
+    color: #AF5E5D;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}

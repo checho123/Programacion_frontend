@@ -1,0 +1,578 @@
+/* Indice:
+1. Apectos Generales.
+2. Grilla.
+3. Elementos del Fondo.
+4. FlexBox de las imagenes.
+5. Texto y su efecto Hover.
+6. Efecto PoPup JS.
+7. Animación
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    background-color: #f9f9ff;
+}
+@font-face{
+    src: url(../Fuentes/Montserrat-Bold.ttf);
+    font-family: F_Bold;
+}
+@font-face{
+    src: url(../Fuentes/Montserrat-Regular.ttf);
+    font-family: F_Regular;
+}
+.Tit1{
+    font-family: F_Regular;
+    display: block;
+    text-align: right;
+    font-size: 45px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+.Tit2{
+    font-family: F_Regular;
+    display: block;
+    text-align: left;
+    font-size: 45px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.Tit3{
+    font-family: F_Regular;
+    display: block;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 2px;
+}
+
+/* Menu */
+/* Todo el menu */
+
+.menu{
+    position: fixed;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#bar{
+    transition: 0.5s;
+}
+
+.icono-menu{
+    transition: 1s;
+    display: block;
+}
+
+.menu img{
+    padding: 20px;
+}
+
+.icono-menu:hover{
+    background: #222827;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.icono-login{
+    transition: 1s;
+}
+.icono-login:hover{
+    background: #222827;
+    background: rgba(0,0 ,0,0.5);
+    border-radius: 100%;
+    transition: all 1s;
+}
+
+
+.logo:hover{
+    transform:scale(1.5);
+    transition: 1.5s;
+}
+
+.icono-exit:hover{
+    transform: scale(1.5);
+    transition: .5s;
+}
+
+.decoracion{
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+
+
+/* todo lo de la Efectos */
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #475D6B;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+
+.logo{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+.overlay-menu{
+    width: 100%
+} 
+
+.link{
+   margin-left: 10%;
+   padding: -5px;
+   font-family: F_Regular;
+}
+
+.logo-link:hover{
+    transform: rotate(1800deg) scale(1.2);
+    transition: 5s;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 55px;
+    letter-spacing: 3px;
+    color: #D9E8DD;  
+    transition: 0.3s;
+}
+
+.overlay ul{
+    list-style: none;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #FFFCF9;
+}
+  
+.overlay .closebtn {
+    float: right;
+    margin: 20px;
+    font-size: 60px;
+    cursor: pointer;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
+/* ------------------------------------------ */
+/* ------------------ Grid ------------------ */
+/* ------------------------------------------ */
+
+/* Aqui esta todo el contenedor */
+.contenedor_grilla{
+    display: grid;
+    grid-template-areas:
+/* Área Noticias*/
+"AdorCo1     NOT     Barra_Menu"
+/* Área Articulos-Eventos*/
+"AdorCo2     ART     Barra_Menu"
+/* Área Footer*/
+"foot     foot     foot";
+
+    grid-template-columns: 7.5% 85% 7.5%;
+    /* grid-template-rows: repeat(3, 1fr);  */
+    justify-content: center;
+    align-content: center;
+}
+.AdorCo1{
+    text-align: right;
+    grid-area: AdorCo1;
+}
+.AdorCo2{
+    grid-area: AdorCo2;
+}
+.Barra_Menu{
+    grid-area: Barra_Menu;
+}
+.NOT{
+    text-align: center;
+    grid-area: NOT;
+}
+.ART {
+    text-align: center;
+    grid-area: ART;
+}
+.foot{
+    text-align: center;
+    grid-area: foot;
+}
+
+/* ------------------------------------------ */
+/* --------------- Background --------------- */
+/* ------------------------------------------ */
+
+.AdorCo1 img{
+    width: 80%;
+    height: 160px;
+    position: relative;
+    top: 10%;
+}
+.AdorCo2 img.Cowork{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: 42%;
+}
+.NOT img.Back{
+    height: 260px;
+    margin-bottom: -14%;
+    margin-top: -8%;
+}
+.ART img.Back2{
+    height: 260px;
+    margin-top: -8%;
+}
+/* ----------------------------------------- */
+/* ---------------- FlexBox ---------------- */
+/* ----------------------------------------- */
+
+div.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Cont{
+    width:32%;
+    height: 420px;
+    position:relative;
+    margin-bottom: 10px;
+    /* margin: 5px 5px 0px 5px; */
+}
+.UP1{
+    margin-top: 5%;
+}
+.UP2{
+    margin-top: 10%
+}
+.DW1{
+    margin-top: -5%
+}
+.DW2{
+    margin-top: -10%
+}
+.Cont img{
+    width: 100%;
+    height: 100%;
+    /* objeRt-fit: cover */
+}
+
+/* ----------------------------------------------- */
+/* ---------------- Hover y Texto ---------------- */
+/* ----------------------------------------------- */
+
+/* ----- Noticias ----- */
+.Cont:hover .Texto{
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.801);
+}
+.Cont .Texto
+{
+    padding: 8px;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom:0;
+    color:#fff;
+    background-color:rgba(0, 0, 0, 0.601);
+    opacity:0.8;
+    margin: 0;
+    transition: 1.5s;
+    overflow: hidden;
+}
+.TituloI{
+    font-family: F_Bold;
+    text-align: center;
+    font-size: 22px;
+}
+.Hi{
+    font-family: F_Regular;
+    font-size: 15px;
+    padding: 0;
+    text-align: justify;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+/* ----- Eventos ----- */
+.Cont:hover .Texto2{
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.801);
+}
+.Cont .Texto2
+{
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    bottom:0;
+    color:#fff;
+    background-color:rgba(0, 0, 0, 0.601);
+    opacity:0.8;
+    margin: 0;
+    transition: 1.5s;
+    overflow: hidden;
+}
+.TituloII{
+    font-family: F_Bold;
+    text-align: center;
+    font-size: 22px;
+    margin: 50% 16% 0% 16%;
+}
+.Hi2{
+    font-family: F_Regular;
+    font-size: 15px;
+    padding: 0;
+    text-align: center;
+}
+/* ---------------------------------------------- */
+/* ---------------- Efecto PopUp ---------------- */
+/* ---------------------------------------------- */
+.overlay-revista:target{
+    background-color:#f9f9ff;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+div.popup{
+    background: #f9f9ff;
+    width: 80%;
+    height: 90%;
+    display: flex;
+
+    
+}
+figure.imagen_noti{
+    width: 35%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+figcaption{
+    font-size: 2.2vh;
+    margin: 5%;
+    color: #475d6b
+}
+.imagenes{
+    width: 100%;
+    height: 100%;   
+}
+.contenido{
+    margin-left: 3%;
+    width: 62%;
+    height: 90%;
+    text-align: justify;
+}
+.contenido .TNot{
+    font-family:  F_Bold;
+}
+.contenido .TText{
+    font-family: F_Regular;
+    font-size: 12px;
+    font-weight: 200
+}
+/* redes sociales */
+.Redes-Soc{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.Redes{
+    text-align: center;
+    width: 20%;
+    margin-right: 100px;
+    margin-bottom: 15px
+}
+img.Compar{
+    width: 40px;
+    height: 40px;
+}
+table, th, td {
+  border-collapse: collapse;
+}
+.Com{
+    font-size: 2.2vh;
+    color: #475d6b;
+    font-weight: 100
+}
+
+/* Ventana emergente */
+
+.btn-cerrar-popup{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+.btn-cerrar-popup img.X{
+    width: 30px;
+    height: 30px;
+}
+.overlay-revista/* .active */{
+    display: none
+}
+/* ---------------------------------------------------------- */
+/* ---------------- EfeRto PopUp Animaciones ---------------- */
+/* ---------------------------------------------------------- */
+.popup.active{
+    opacity: 1;
+    transform: scale(1)
+}
+
+
+/* Área Footer*/
+ .foot{
+    grid-area: foot;
+}
+
+footer{
+    width: 100%;
+    background: #212733;
+    background-size: 100% 100%;
+    font-size: 20px; 
+    color: white;
+}
+
+.container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column1 {
+    max-width: 800px;
+}
+
+.column1 h1 {
+    font-size: 22px;
+    text-align: right;
+    font-family: F_Bold;
+    
+}
+
+.column1 p {
+    font-size: 14px;
+    color: #7C909B;
+    margin-top: 20px;
+}
+
+.column1 img{
+    position: relative;
+    width: 120px;
+    height: 180px;
+}
+
+.column2 {
+    max-width: 400px;
+}
+
+.column2 h1 {
+    font-size: 22px;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+    
+}
+
+.row .img-row {
+    margin-top: 10%;
+    width: 100px;
+    height: 100px;
+    border: 50%;
+}
+
+.row label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #7C909B;
+}
+
+.Bcontact {
+    max-width: 100%;
+    font-family: F_Regular;
+}
+
+.Bcontact h1 {
+    font-size: 22px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row2 img {
+    width: 50px;
+    height: 50px;
+    border: 50%;
+}
+
+.row2 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 1200px;
+}
+
+.row3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row3 img {
+    width: 50px;
+    height: 50px;
+}
+
+.row3 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 1200px;
+}
+
+.container-footer {
+    width: 100%;
+    padding: 20px;
+    color: #7C909B;
+}

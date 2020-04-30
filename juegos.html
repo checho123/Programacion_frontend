@@ -1,0 +1,348 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/juegos.css">
+    <link rel="shortcut icon" href="imagenes/Icono/favicon-juegos.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <title>Juegos</title>
+</head>
+
+<body>
+
+    <!-- Contenedor Mayor donde esta todo el esqueleto -->
+    <section class="contenedor_grid">
+        
+        <!-- fin zona donde va la imagen de coworking -->
+        <!-- zona donde va el menu -->
+        <div class="barra">
+
+            <!-- Este es el menu -->
+            <header>
+                <div id="navegacion" class="overlay" class="bar">
+
+                    <a class="closebtn" onclick="closeNav()">
+                        <img src="imagenes/1Menu-login_elements/4icons_menu-login_juegos/8Icon_menulogin-x_juegos.png"
+                            alt="icon" class="icono-exit">
+                    </a>
+
+                    <div class="overlay-menu">
+                        <ul class="logo-menu">
+                            <li><a href="index.html"><img class="logo"
+                                        src="imagenes/1Menu-login_elements/4icons_menu-login_juegos/7Icon_menulogin-coworking2_juegos.png"
+                                        alt="logo" width="450" height="250" title="Inicio"></a></li>
+                        </ul>
+                        <ul class="link">
+                            <li><a href="aprende.html"><img
+                                        src="imagenes/1Menu-login_elements/4icons_menu-login_juegos/1Icon_menu-aprende_juegos.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Aprende"></a></li>
+                            <li><a href="aprende.html">Aprende</a></li>
+                            <li><a href="revista.html"><img
+                                        src="imagenes/1Menu-login_elements/4icons_menu-login_juegos/2Icon_menu-revista_juegos.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Revista"></a></li>
+                            <li><a href="revista.html">Revista</a></li>
+                            <li><a href="juegos.html"><img
+                                        src="imagenes/1Menu-login_elements/4icons_menu-login_juegos/3Icon_menu-juegos_juegos.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Juegos"></a></li>
+                            <li><a href="juegos.html">Juegos</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="menu" id="bar">
+                    <span onclick="openNav()" class="bar">
+                        <img src="imagenes/4Footers_elements/4Icons_footer-juegos/menu_icon-juegos1.png" alt="icon" class="icono-menu">
+                    </span>
+                    <span onclick="openNavIngreso()">
+                        <img src="imagenes/4Footers_elements/4Icons_footer-juegos/menu_icon-juegos2.png" alt="icon" class="icono-login"
+                            id="icono-login">
+                    </span>
+                </div>
+                <div class="decoracion">
+                    <img src="imagenes/4Footers_elements/4Icons_footer-juegos/menu_icon-juegos3.png"
+                        alt="" width="40" height="50">
+                </div>
+
+                <!--menu de ingreso-->
+                <div id="navegacionIngreso" class="overlay" class="bar">
+
+                    <a class="closebtn" onclick="closeNavIngreso()">
+                        <img src="imagenes/1Menu-login_elements/2icons_menu-login_aprende/8Icon_menulogin-x_aprende.png"
+                            alt="icon" class="icono-exit">
+                    </a>
+
+                    <div class="overlay-menu">
+                        <ul class="logo-menu">
+                            <li><a href="index.html"><img class="logo"
+                                        src="imagenes/1Menu-login_elements/4icons_menu-login_juegos/7Icon_menulogin-coworking2_juegos.png"
+                                        alt="logo" width="450" height="250" title="Inicio"></a></li>
+                        </ul>
+                        <ul class="link">
+                            <li><a href="#" id="btn-cerrari"><img
+                                        src="imagenes/1Menu-login_elements/4icons_menu-login_juegos/8Icon_menulogin-x_juegos.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Aprende"></a></li>
+                            <li><a href="#" onclick="cerrarSesion()" id="btn-cerrar">Cerrar <br> Sesión</a></li>
+                            <li><a href="#" id="btn-ingresofi"><img
+                                        src="imagenes/1Menu-login_elements/4icons_menu-login_juegos/4Icon_login-facebook_juegos.png"
+                                        alt="" width="90" height="90" class="logo-link" title="facebook"></a></li>
+                            <li><a href="#" onclick="inicioSesion()" id="btn-ingresof">Facebook.()</a></li>
+                            <li><a href="#" id="btn-ingresogi"><img
+                                        src="imagenes/1Menu-login_elements/4icons_menu-login_juegos/5Icon_login-google_juegos.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Google"></a></li>
+                            <li><a href="#" onclick="inicioSesion()" id="btn-ingresog">Google.()</a></li>
+                            <li><a href="#" id="btn-ingresooi"><img
+                                        src="imagenes/1Menu-login_elements/4icons_menu-login_juegos/6Icon_login-outlook_juegos.png"
+                                        alt="" width="90" height="90" class="logo-link" title="Outlook"></a></li>
+                            <li><a href="#" onclick="inicioSesion()" id="btn-ingresoo">Outlook.()</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </header>
+
+        </div>
+
+        <!-- fin zona donde va el menu -->
+        <img src="imagenes/3Backgrounds_elements/bg_scroll-juegos1.png" alt="" class="adorno-uno">
+        <h1 class="game1ti" data-aos="fade-right">Blockly Games</h1>
+        <h1 class="game1ti" data-aos="fade-right"><span class="color-uno">Blockly Games</span></h1>
+        
+        <!-- zona donde va el contenido del primer juego -->
+        <div class="game1t" data-aos="fade-up-right">
+           
+            <p>Blockly Games es una serie de juegos educativos que enseñan programación. Está diseñado para niños que no
+                han tenido experiencia previa con la programación de computadoras.
+            </p>
+            <br><br>
+            <p>Al final de estos juegos, los jugadores están listos para usar lenguajes convencionales basados en texto.
+                Blockly Games es un proyecto de Google para animar a los programadores del mañana. Los juegos están
+                diseñados para ser a su propio ritmo y autoaprendizaje. Siéntase libre de usar Blockly Games tanto
+                dentro como fuera del aula.
+            </p>
+            <br><br>
+            <p>Todo el código es de código abierto, consulte el sitio web del desarrollador para obtener más información
+                o para descargar archivos zip para su uso sin conexión. Los desarrolladores, maestros y padres son
+                bienvenidos a dar su opinión a medida que continuamos creciendo.</p>
+            <br><br>
+            <!-- Boton del primer juego -->
+            <h1>//Juega Aquí:</h1>
+            <div class="child">
+                <a href="#img1"><img class="img1"
+                        src="imagenes/2Pages_elements/fotos-logos/4juegos/3logo_blockly-games.png" alt="Blockly" title="Juega aqui"></a>
+            </div>
+            <!-- fin Boton del primer juego -->
+        </div>
+        <!-- fin zona donde va el contenido del primer juego -->
+        <img src="imagenes/3Backgrounds_elements/bg_scroll-juegos2.png" alt="adorno-dos" class="adorno-dos">
+        <!-- zona de la imagen del primer juego -->
+        <div class="game1i">
+            <img src="imagenes/2Pages_elements/fotos-logos/4juegos/1blockly-games.jpg" alt="juego1" data-aos="fade-up"
+            data-aos-duration="3000">>
+        </div>
+        <!-- fin zona de la imagen del primer juego -->
+        <h1 class="game2ti" data-aos="fade-up-left">Lightbot</h1>
+        <h1 class="game2ti" data-aos="fade-up-left"> <span class="color-dos">Lightbot</span> </h1>
+        <!-- zona donde va el contenido del segundo juego -->
+        <div class="game2t" data-aos="zoom-in-up">
+
+
+            <p>Lo que aprenderás con esta interesante plataforma es sobre, Secuenciación, Sobrecarga, Procedimientos,
+                Bucles recursivos, Condicionales y mucho más. Si no entendiste algunos de los términos anteriores ¡No te
+                preocupes!, te familiarizarás en poco tiempo siguiendo las instrucciones.
+            </p>
+            <br><br>
+            <p>El entorno es amistoso para todas las edades. LightBot fue diseñado con codificadores por primera vez.
+            </p>
+            <br><br>
+            <p>La han jugado más de 20 millones de niños y hasido utilizada por decenas de miles de maestros en todo el
+                mundo.</p>
+            <br><br>
+            <!-- fin zona donde va el contenido del segundo juego -->
+            <!-- Boton del segundo juego -->
+            <h1>//Juega Aquí:</h1>
+            <div class="child">
+                <a href="#img2"><img class="img1" src="imagenes/2Pages_elements/fotos-logos/4juegos/4logo_lightbot.png"
+                        alt="Lightbot" title="Juega aqui"></a>
+            </div>
+            <!-- fin Boton del segundo juego -->
+        </div>
+        <!-- fin zona donde va el contenido del segundo juego -->
+        <!-- zona de la imagen del segundo juego -->
+        <div class="game2i">
+            <img src="imagenes/2Pages_elements/fotos-logos/4juegos/2lightbot.jpg" alt="juego2" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+        </div>
+        <!-- fin zona de la imagen del primer juego -->
+        <!-- zona del titulo de agradecimientos -->
+        
+        <img src="imagenes/3Backgrounds_elements/bg_scroll-juegos2.png" alt="adorno-tres" class="adorno-tres">
+
+            <div class="bictiati" data-aos="fade-up"
+            data-aos-anchor-placement="center-center"> <h2>(Aprende Más)</h2> <br> <p>¿Sientes que has aprendido mucho con esta breve informacion? no te detengas y continúa conociendo este mundo, junto a los mejores.</p> </div>
+
+        <!-- zona de del contenido sobre bictia -->
+        
+        <div class="bictia" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+            <a href="http://bictia.com/" target="_blank">
+                <img src="imagenes/2Pages_elements/fotos-logos/4juegos/5logo_bictia.png" alt="">
+            </a>
+            <br><br>
+            <p data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">Entendemos la importancia de la economía digital
+                para el desarrollo económico. Con esto en
+                mente, BICTIA provee entrenamiento en lenguajes
+                de programación, desde las bases fundamentales
+                hasta los lenguajes más avanzados.</p>
+
+        </div>
+        <!-- fin zona de del contenido sobre bictia -->
+
+        <div class="bit" data-aos="zoom-out-right">
+            <a href="https://bit.institute/" target="_blank">
+                <img src="imagenes/2Pages_elements/fotos-logos/4juegos/6logo_bit.png" alt=""> 
+            </a>
+            <br><br>
+            <p data-aos="zoom-out-left">BIT quiere que aprendas lo que de verdad te
+                sirve en el mundo laboral y profesional hoy. En
+                solo meses desarrolla las habilidades que te permitirán
+                conseguir un mejor trabajo o crear tu
+                propia empresa de la mano de la tecnología.</p>
+       </div>
+
+        <img class="adornoUno" src="imagenes/3Backgrounds_elements/bg_scroll-juegos4.png" alt="">
+        
+        <!-- fin zona de del contenido sobre bit -->
+
+        <!-- fin Contenedor Mayor donde esta todo el esqueleto -->
+
+        <!-- codigo hecho por nicolas para las ventanas emergentes de juegos -->
+        <div class="modal" id="img1">
+            <a class="Ce" href=""><img
+                    src="imagenes/1Menu-login_elements/4icons_menu-login_juegos/8Icon_menulogin-x_juegos.png"
+                    alt=""></a>
+            <div class="Em">
+                <a href="#img2"><img src="imagenes/Icono/MosaicosBarcelona-icono-flecha.png" alt="flecha-i" class="flecha-izquierda"></a> 
+                <a href="#"><iframe src=" https://blockly-games.appspot.com/?lang=es"
+                            frameborder="0"></iframe>
+                </a>
+                <a href="#img2"><img src="imagenes/Icono/MosaicosBarcelona-icono-flecha.png" alt="flecha-d" class="flecha-derecha"></a>
+            </div>
+        </div>
+        <div class="modal" id="img2">
+            <a class="Ce" href=""><img
+                    src="imagenes/1Menu-login_elements/4icons_menu-login_juegos/8Icon_menulogin-x_juegos.png"
+                    alt=""></a>
+            <div class="Em">
+                <a href="#img1"><img src="imagenes/Icono/MosaicosBarcelona-icono-flecha.png" alt="flecha-i" class="flecha-izquierda"></a> 
+                <a href="#"><iframe src="http://lightbot.com/flash.html" frameborder="0"></iframe>
+                </a>
+                <a href="#img1"><img src="imagenes/Icono/MosaicosBarcelona-icono-flecha.png" alt="flecha-d" class="flecha-derecha"></a>
+            </div>
+        </div>
+
+        <!-- zona de del footer -->
+        <div class="footer1">
+            <footer>
+                <div class="container-footer-all">
+                        
+                    <div class="container-body">
+                        <div class="Bcontact">
+                            <div class="row2">
+                            </div>
+                        </div>
+                        <div class="column2">
+
+                            <div class="row">
+                                <a target="_blank" href="https://www.facebook.com/Bictia/"> <img
+                                        src="imagenes/4Footers_elements/4Icons_footer-juegos/1footer-fb-juegos.png"
+                                         title="https://www.facebook.com/Bictia/" alt=""></a>
+
+                            </div>
+                            <div class="row">
+                                <a target="_blank" href="https://twitter.com/bictia"> <img
+                                        src="imagenes/4Footers_elements/4Icons_footer-juegos/2footer-tw-juegos.png"
+                                        title="https://twitter.com/bictia" alt=""></a>
+
+                            </div>
+
+                            <div class="row">
+                                <a target="_blank" href="https://www.instagram.com/bictia/"> <img
+                                        src="imagenes/4Footers_elements/4Icons_footer-juegos/3footer-in-juegos.png"
+                                         title="https://www.instagram.com/bictia/" alt=""></a>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="column1">
+                            <img src="imagenes/3Backgrounds_elements/bg_scroll-juegos3.png">
+
+                            <h1>"Aprender a programar es tan poderoso que la mayoria de nuestro equipo no sabia nada del
+                                tema hace dos meses y ahora te presentamos este proyecto con orgullo"</h1>
+                            <h1>- Coworking2</h1> <br>
+                            
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container-footer">
+
+                    <div class="Bcontact">
+
+                        <div class="row2">
+                            <section>
+                                <label>Phone. 450-462-3632
+
+                                </label></section>
+
+                            <section>
+                                <label>Fax.450-462-3632
+
+                                </label></section>
+
+                            <section>
+                                <label>Toll Free. 1-866-962-3632 Website by Coworking 2
+
+                                </label></section>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </footer>
+
+        </div>
+        <!-- fin zona de del footer -->
+    </section>
+    <!-- fin codigo hecho por nicolas para las ventanas emergentes de juegos -->
+    <script src="js/menu.js"></script>
+
+    <script type="text/javascript">
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+        });
+    </script>
+
+    <!--SCRIPTS DE INGRESO-->
+    <script src="js/ingreso.js"></script>
+    <script>verificarSesion()</script>
+
+
+</body>
+
+</html>
